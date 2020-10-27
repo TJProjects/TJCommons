@@ -14,6 +14,8 @@
 		04A6EA1E2547C7150054E1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA1C2547C7150054E1DB /* LaunchScreen.storyboard */; };
 		04A6EA212547C7150054E1DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA202547C7150054E1DB /* main.m */; };
 		04A6EA2C2547C76F0054E1DB /* TJTEST.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA2B2547C76F0054E1DB /* TJTEST.m */; };
+		04A6EA352547C9720054E1DB /* TJCommons.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA342547C9720054E1DB /* TJCommons.podspec */; };
+		04A6EA3D2547CB340054E1DB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA3C2547CB340054E1DB /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		04A6EA202547C7150054E1DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04A6EA2A2547C76F0054E1DB /* TJTEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJTEST.h; sourceTree = "<group>"; };
 		04A6EA2B2547C76F0054E1DB /* TJTEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJTEST.m; sourceTree = "<group>"; };
+		04A6EA342547C9720054E1DB /* TJCommons.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TJCommons.podspec; sourceTree = "<group>"; };
+		04A6EA3C2547CB340054E1DB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 		04A6EA022547C7140054E1DB = {
 			isa = PBXGroup;
 			children = (
+				04A6EA3C2547CB340054E1DB /* LICENSE */,
+				04A6EA342547C9720054E1DB /* TJCommons.podspec */,
 				04A6EA292547C7480054E1DB /* TJCommon */,
 				04A6EA0D2547C7140054E1DB /* TJCommons */,
 				04A6EA0C2547C7140054E1DB /* Products */,
@@ -143,6 +149,8 @@
 				04A6EA1E2547C7150054E1DB /* LaunchScreen.storyboard in Resources */,
 				04A6EA1B2547C7150054E1DB /* Assets.xcassets in Resources */,
 				04A6EA192547C7140054E1DB /* Main.storyboard in Resources */,
+				04A6EA352547C9720054E1DB /* TJCommons.podspec in Resources */,
+				04A6EA3D2547CB340054E1DB /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
