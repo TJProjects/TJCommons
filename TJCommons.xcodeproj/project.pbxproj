@@ -13,9 +13,24 @@
 		04A6EA1B2547C7150054E1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA1A2547C7150054E1DB /* Assets.xcassets */; };
 		04A6EA1E2547C7150054E1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA1C2547C7150054E1DB /* LaunchScreen.storyboard */; };
 		04A6EA212547C7150054E1DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA202547C7150054E1DB /* main.m */; };
-		04A6EA2C2547C76F0054E1DB /* TJTEST.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA2B2547C76F0054E1DB /* TJTEST.m */; };
 		04A6EA352547C9720054E1DB /* TJCommons.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA342547C9720054E1DB /* TJCommons.podspec */; };
 		04A6EA3D2547CB340054E1DB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA3C2547CB340054E1DB /* LICENSE */; };
+		04A6EA652547FB0F0054E1DB /* UIButton+TJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA642547FB0F0054E1DB /* UIButton+TJButton.m */; };
+		04A6EA6A254803510054E1DB /* UILabel+TJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA69254803510054E1DB /* UILabel+TJLabel.m */; };
+		04A6EA6E25480A000054E1DB /* UIView+TJView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA6D25480A000054E1DB /* UIView+TJView.m */; };
+		04A6EA732548122C0054E1DB /* UITableView+TJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA722548122C0054E1DB /* UITableView+TJTableView.m */; };
+		04A6EA782548140E0054E1DB /* UIViewController+TJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA772548140E0054E1DB /* UIViewController+TJViewController.m */; };
+		04A6EA7F25481D920054E1DB /* NSObject+TJExchangeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA7E25481D920054E1DB /* NSObject+TJExchangeMethod.m */; };
+		04A6EA842548204F0054E1DB /* TJSafeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA832548204F0054E1DB /* TJSafeMethod.m */; };
+		04A6EA892548235E0054E1DB /* NSArray+TJSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA882548235E0054E1DB /* NSArray+TJSafeArray.m */; };
+		04A6EA9F25482F930054E1DB /* NSDictionary+TJSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA9E25482F930054E1DB /* NSDictionary+TJSafeDictionary.m */; };
+		04A6EABE2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EABD2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.m */; };
+		04A6EAC225495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EAC125495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.m */; };
+		04A6EAD125497B0D0054E1DB /* NSObject+TJSafeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EAD025497B0D0054E1DB /* NSObject+TJSafeMethod.m */; };
+		04A6EAE3254982F80054E1DB /* NSString+TJString.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EAE2254982F80054E1DB /* NSString+TJString.m */; };
+		04A6EAE8254984EE0054E1DB /* NSDate+TJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EAE7254984EE0054E1DB /* NSDate+TJDate.m */; };
+		04A6EAED254A62590054E1DB /* UIButton+TJClickInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EAEC254A62590054E1DB /* UIButton+TJClickInterval.m */; };
+		04A6EAF4254A75760054E1DB /* UIImage+TJImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EAF3254A75760054E1DB /* UIImage+TJImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +44,42 @@
 		04A6EA1D2547C7150054E1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A6EA1F2547C7150054E1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A6EA202547C7150054E1DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04A6EA2A2547C76F0054E1DB /* TJTEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJTEST.h; sourceTree = "<group>"; };
-		04A6EA2B2547C76F0054E1DB /* TJTEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJTEST.m; sourceTree = "<group>"; };
 		04A6EA342547C9720054E1DB /* TJCommons.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TJCommons.podspec; sourceTree = "<group>"; };
 		04A6EA3C2547CB340054E1DB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		04A6EA5D2547F8120054E1DB /* TJCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJCommons.h; sourceTree = "<group>"; };
+		04A6EA602547FA0D0054E1DB /* TJCommons_define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJCommons_define.h; sourceTree = "<group>"; };
+		04A6EA632547FB0F0054E1DB /* UIButton+TJButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TJButton.h"; sourceTree = "<group>"; };
+		04A6EA642547FB0F0054E1DB /* UIButton+TJButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TJButton.m"; sourceTree = "<group>"; };
+		04A6EA68254803510054E1DB /* UILabel+TJLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+TJLabel.h"; sourceTree = "<group>"; };
+		04A6EA69254803510054E1DB /* UILabel+TJLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TJLabel.m"; sourceTree = "<group>"; };
+		04A6EA6C25480A000054E1DB /* UIView+TJView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TJView.h"; sourceTree = "<group>"; };
+		04A6EA6D25480A000054E1DB /* UIView+TJView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJView.m"; sourceTree = "<group>"; };
+		04A6EA712548122C0054E1DB /* UITableView+TJTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+TJTableView.h"; sourceTree = "<group>"; };
+		04A6EA722548122C0054E1DB /* UITableView+TJTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TJTableView.m"; sourceTree = "<group>"; };
+		04A6EA762548140E0054E1DB /* UIViewController+TJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TJViewController.h"; sourceTree = "<group>"; };
+		04A6EA772548140E0054E1DB /* UIViewController+TJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TJViewController.m"; sourceTree = "<group>"; };
+		04A6EA7D25481D920054E1DB /* NSObject+TJExchangeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TJExchangeMethod.h"; sourceTree = "<group>"; };
+		04A6EA7E25481D920054E1DB /* NSObject+TJExchangeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TJExchangeMethod.m"; sourceTree = "<group>"; };
+		04A6EA822548204F0054E1DB /* TJSafeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJSafeMethod.h; sourceTree = "<group>"; };
+		04A6EA832548204F0054E1DB /* TJSafeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJSafeMethod.m; sourceTree = "<group>"; };
+		04A6EA872548235E0054E1DB /* NSArray+TJSafeArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+TJSafeArray.h"; sourceTree = "<group>"; };
+		04A6EA882548235E0054E1DB /* NSArray+TJSafeArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TJSafeArray.m"; sourceTree = "<group>"; };
+		04A6EA9D25482F930054E1DB /* NSDictionary+TJSafeDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TJSafeDictionary.h"; sourceTree = "<group>"; };
+		04A6EA9E25482F930054E1DB /* NSDictionary+TJSafeDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TJSafeDictionary.m"; sourceTree = "<group>"; };
+		04A6EABC2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+TJSafeMutableArray.h"; sourceTree = "<group>"; };
+		04A6EABD2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+TJSafeMutableArray.m"; sourceTree = "<group>"; };
+		04A6EAC025495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+TJSafeMutableDictionary.h"; sourceTree = "<group>"; };
+		04A6EAC125495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+TJSafeMutableDictionary.m"; sourceTree = "<group>"; };
+		04A6EACF25497B0D0054E1DB /* NSObject+TJSafeMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TJSafeMethod.h"; sourceTree = "<group>"; };
+		04A6EAD025497B0D0054E1DB /* NSObject+TJSafeMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TJSafeMethod.m"; sourceTree = "<group>"; };
+		04A6EAE1254982F80054E1DB /* NSString+TJString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TJString.h"; sourceTree = "<group>"; };
+		04A6EAE2254982F80054E1DB /* NSString+TJString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TJString.m"; sourceTree = "<group>"; };
+		04A6EAE6254984EE0054E1DB /* NSDate+TJDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TJDate.h"; sourceTree = "<group>"; };
+		04A6EAE7254984EE0054E1DB /* NSDate+TJDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TJDate.m"; sourceTree = "<group>"; };
+		04A6EAEB254A62590054E1DB /* UIButton+TJClickInterval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TJClickInterval.h"; sourceTree = "<group>"; };
+		04A6EAEC254A62590054E1DB /* UIButton+TJClickInterval.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TJClickInterval.m"; sourceTree = "<group>"; };
+		04A6EAF2254A75760054E1DB /* UIImage+TJImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TJImage.h"; sourceTree = "<group>"; };
+		04A6EAF3254A75760054E1DB /* UIImage+TJImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TJImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +131,106 @@
 		04A6EA292547C7480054E1DB /* TJCommon */ = {
 			isa = PBXGroup;
 			children = (
-				04A6EA2A2547C76F0054E1DB /* TJTEST.h */,
-				04A6EA2B2547C76F0054E1DB /* TJTEST.m */,
+				04A6EA5D2547F8120054E1DB /* TJCommons.h */,
+				04A6EA75254813B90054E1DB /* Define */,
+				04A6EA622547FAE90054E1DB /* Factory */,
+				04A6EA7C25481D5F0054E1DB /* ExchangeMethod */,
+				04A6EA7B25481D3A0054E1DB /* SafeData */,
+				04A6EACE25497AE30054E1DB /* SafeMethod */,
+				04A6EAE0254982910054E1DB /* DataCheck */,
+				04A6EAEA254A62270054E1DB /* ButtonClickInterval */,
+				04A6EAF1254A754B0054E1DB /* Image */,
 			);
 			path = TJCommon;
+			sourceTree = "<group>";
+		};
+		04A6EA622547FAE90054E1DB /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EA632547FB0F0054E1DB /* UIButton+TJButton.h */,
+				04A6EA642547FB0F0054E1DB /* UIButton+TJButton.m */,
+				04A6EA68254803510054E1DB /* UILabel+TJLabel.h */,
+				04A6EA69254803510054E1DB /* UILabel+TJLabel.m */,
+				04A6EA6C25480A000054E1DB /* UIView+TJView.h */,
+				04A6EA6D25480A000054E1DB /* UIView+TJView.m */,
+				04A6EA712548122C0054E1DB /* UITableView+TJTableView.h */,
+				04A6EA722548122C0054E1DB /* UITableView+TJTableView.m */,
+				04A6EA762548140E0054E1DB /* UIViewController+TJViewController.h */,
+				04A6EA772548140E0054E1DB /* UIViewController+TJViewController.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		04A6EA75254813B90054E1DB /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EA602547FA0D0054E1DB /* TJCommons_define.h */,
+			);
+			name = Define;
+			sourceTree = "<group>";
+		};
+		04A6EA7B25481D3A0054E1DB /* SafeData */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EA822548204F0054E1DB /* TJSafeMethod.h */,
+				04A6EA832548204F0054E1DB /* TJSafeMethod.m */,
+				04A6EA872548235E0054E1DB /* NSArray+TJSafeArray.h */,
+				04A6EA882548235E0054E1DB /* NSArray+TJSafeArray.m */,
+				04A6EABC2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.h */,
+				04A6EABD2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.m */,
+				04A6EA9D25482F930054E1DB /* NSDictionary+TJSafeDictionary.h */,
+				04A6EA9E25482F930054E1DB /* NSDictionary+TJSafeDictionary.m */,
+				04A6EAC025495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.h */,
+				04A6EAC125495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.m */,
+			);
+			name = SafeData;
+			sourceTree = "<group>";
+		};
+		04A6EA7C25481D5F0054E1DB /* ExchangeMethod */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EA7D25481D920054E1DB /* NSObject+TJExchangeMethod.h */,
+				04A6EA7E25481D920054E1DB /* NSObject+TJExchangeMethod.m */,
+			);
+			name = ExchangeMethod;
+			sourceTree = "<group>";
+		};
+		04A6EACE25497AE30054E1DB /* SafeMethod */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EACF25497B0D0054E1DB /* NSObject+TJSafeMethod.h */,
+				04A6EAD025497B0D0054E1DB /* NSObject+TJSafeMethod.m */,
+			);
+			name = SafeMethod;
+			sourceTree = "<group>";
+		};
+		04A6EAE0254982910054E1DB /* DataCheck */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EAE1254982F80054E1DB /* NSString+TJString.h */,
+				04A6EAE2254982F80054E1DB /* NSString+TJString.m */,
+				04A6EAE6254984EE0054E1DB /* NSDate+TJDate.h */,
+				04A6EAE7254984EE0054E1DB /* NSDate+TJDate.m */,
+			);
+			name = DataCheck;
+			sourceTree = "<group>";
+		};
+		04A6EAEA254A62270054E1DB /* ButtonClickInterval */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EAEB254A62590054E1DB /* UIButton+TJClickInterval.h */,
+				04A6EAEC254A62590054E1DB /* UIButton+TJClickInterval.m */,
+			);
+			name = ButtonClickInterval;
+			sourceTree = "<group>";
+		};
+		04A6EAF1254A754B0054E1DB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				04A6EAF2254A75760054E1DB /* UIImage+TJImage.h */,
+				04A6EAF3254A75760054E1DB /* UIImage+TJImage.m */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +304,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A6EAD125497B0D0054E1DB /* NSObject+TJSafeMethod.m in Sources */,
+				04A6EAED254A62590054E1DB /* UIButton+TJClickInterval.m in Sources */,
+				04A6EAF4254A75760054E1DB /* UIImage+TJImage.m in Sources */,
+				04A6EA6A254803510054E1DB /* UILabel+TJLabel.m in Sources */,
+				04A6EAC225495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.m in Sources */,
+				04A6EA7F25481D920054E1DB /* NSObject+TJExchangeMethod.m in Sources */,
+				04A6EA892548235E0054E1DB /* NSArray+TJSafeArray.m in Sources */,
+				04A6EA6E25480A000054E1DB /* UIView+TJView.m in Sources */,
+				04A6EAE8254984EE0054E1DB /* NSDate+TJDate.m in Sources */,
+				04A6EAE3254982F80054E1DB /* NSString+TJString.m in Sources */,
+				04A6EA732548122C0054E1DB /* UITableView+TJTableView.m in Sources */,
+				04A6EA782548140E0054E1DB /* UIViewController+TJViewController.m in Sources */,
 				04A6EA162547C7140054E1DB /* ViewController.m in Sources */,
-				04A6EA2C2547C76F0054E1DB /* TJTEST.m in Sources */,
+				04A6EA652547FB0F0054E1DB /* UIButton+TJButton.m in Sources */,
+				04A6EA842548204F0054E1DB /* TJSafeMethod.m in Sources */,
+				04A6EABE2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.m in Sources */,
 				04A6EA102547C7140054E1DB /* AppDelegate.m in Sources */,
 				04A6EA212547C7150054E1DB /* main.m in Sources */,
+				04A6EA9F25482F930054E1DB /* NSDictionary+TJSafeDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     #名称
   s.name             = 'TJCommons'
   #版本号
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   #简介
   s.summary          = 'A short description of TJCommons.'
   #描述
@@ -36,10 +36,12 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'TJCommons' => ['TJCommons/Assets/*.png']
   # }
-
+  # 是否需要ARC自动管理内存
+  s.requires_arc = true
   # s.public_header_files = 'Pod/Classes/**/*.h'
+  #用到的系统库
+  s.frameworks = 'UIKit'
   #依赖库，不能依赖未发布的库
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
 end
