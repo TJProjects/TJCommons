@@ -10,8 +10,7 @@
 
 @implementation NSMutableDictionary (TJSafeMutableDictionary)
 
-+ (void)load {
-    [super load];
++ (void)avoidCrashExchangeMethod {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         Class _NSDictionaryM = NSClassFromString(@"__NSDictionaryM");
@@ -24,6 +23,21 @@
         [NSObject TJ_exchangeMethodWithReplacedClass:_NSDictionaryM replacedSel:@selector(removeObjectForKey:) replaceSel:@selector(_NSDictionaryM_removeObjectForKey:)];
     });
 }
+
+//+ (void)load {
+//    [super load];
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        Class _NSDictionaryM = NSClassFromString(@"__NSDictionaryM");
+//        
+//        //setObject:forKey:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSDictionaryM replacedSel:@selector(setObject:forKey:) replaceSel:@selector(_NSDictionaryM_setObject:forKey:)];
+//        //setObject:forKeyedSubscript:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSDictionaryM replacedSel:@selector(setObject:forKeyedSubscript:) replaceSel:@selector(_NSDictionaryM_setObject:forKeyedSubscript:)];
+//        //removeObjectForKey:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSDictionaryM replacedSel:@selector(removeObjectForKey:) replaceSel:@selector(_NSDictionaryM_removeObjectForKey:)];
+//    });
+//}
 #pragma mark - setObject:forKey:
 - (void)_NSDictionaryM_setObject:(id)anObject forKey:(id<NSCopying>)aKey {
     @try {

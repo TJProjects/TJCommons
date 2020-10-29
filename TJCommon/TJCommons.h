@@ -8,6 +8,8 @@
 #ifndef TJCommons_h
 #define TJCommons_h
 
+// 设置方法是否使用
+#import "TJCommon.h"
 //宏定义
 #import "TJCommons_define.h"
 //工厂类处理
@@ -19,10 +21,11 @@
 
 //数据安全处理
 #import "TJSafeMethod.h"
-#import "NSArray+TJSafeArray.h"
-#import "NSMutableArray+TJSafeMutableArray.h"
-#import "NSDictionary+TJSafeDictionary.h"
-#import "NSMutableDictionary+TJSafeMutableDictionary.h"
+//#import "NSArray+TJSafeArray.h"
+//#import "NSMutableArray+TJSafeMutableArray.h"
+//#import "NSDictionary+TJSafeDictionary.h"
+//#import "NSMutableDictionary+TJSafeMutableDictionary.h"
+//#import "NSObject+TJSafeMethod.h"
 
 // 常用的文字计算。时间计算
 #import "NSString+TJString.h"

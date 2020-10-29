@@ -10,13 +10,20 @@
 
 @implementation NSDictionary (TJSafeDictionary)
 
-+ (void)load {
-    [super load];
++ (void)avoidCrashExchangeMethod {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [NSObject TJ_exchangeClassMethodWithReplacedClass:[self class] replacedSel:@selector(dictionaryWithObjects:forKeys:count:) replaceSel:@selector(_NSDictionary_dictionaryWithObjects:forKeys:count:)];
     });
 }
+//
+//+ (void)load {
+//    [super load];
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        [NSObject TJ_exchangeClassMethodWithReplacedClass:[self class] replacedSel:@selector(dictionaryWithObjects:forKeys:count:) replaceSel:@selector(_NSDictionary_dictionaryWithObjects:forKeys:count:)];
+//    });
+//}
 + (instancetype)_NSDictionary_dictionaryWithObjects:(const id  _Nonnull __unsafe_unretained *)objects forKeys:(const id<NSCopying>  _Nonnull __unsafe_unretained *)keys count:(NSUInteger)cnt {
     id instance = nil;
     @try {

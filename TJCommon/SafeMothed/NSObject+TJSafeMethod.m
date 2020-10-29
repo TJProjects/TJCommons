@@ -11,7 +11,7 @@
 
 @implementation NSObject (TJSafeMethod)
 
-+ (void)load {
++ (void)avoidCrashExchangeMethod {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [NSObject TJ_exchangeMethodWithReplacedClass:[NSObject class] replacedSel:@selector(forwardingTargetForSelector:) replaceSel:@selector(my_forwardingTargetForSelector:)];
@@ -20,6 +20,16 @@
         [NSObject TJ_exchangeMethodWithReplacedClass:[NSObject class] replacedSel:@selector(descriptionWithLocale:) replaceSel:@selector(TJ_descriptionWithLocale:)];
     });
 }
+
+//+ (void)load {
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        [NSObject TJ_exchangeMethodWithReplacedClass:[NSObject class] replacedSel:@selector(forwardingTargetForSelector:) replaceSel:@selector(my_forwardingTargetForSelector:)];
+//        // log info analyz
+//        [NSObject TJ_exchangeMethodWithReplacedClass:[NSObject class] replacedSel:@selector(description) replaceSel:@selector(TJ_description)];
+//        [NSObject TJ_exchangeMethodWithReplacedClass:[NSObject class] replacedSel:@selector(descriptionWithLocale:) replaceSel:@selector(TJ_descriptionWithLocale:)];
+//    });
+//}
 - (id)my_forwardingTargetForSelector:(SEL)aSelector {
     
     // 获取NSObject的消息转发方法

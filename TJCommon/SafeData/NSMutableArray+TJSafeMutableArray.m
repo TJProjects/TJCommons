@@ -10,8 +10,7 @@
 
 @implementation NSMutableArray (TJSafeMutableArray)
 
-+ (void)load {
-    [super load];
++ (void)avoidCrashExchangeMethod {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         Class _NSArrayM = NSClassFromString(@"__NSArrayM");
@@ -30,6 +29,27 @@
         
     });
 }
+
+//+ (void)load {
+//    [super load];
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        Class _NSArrayM = NSClassFromString(@"__NSArrayM");
+//        // objectsAtIndexes:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayM replacedSel:@selector(objectAtIndex:) replaceSel:@selector(_NSArrayM_objectAtIndex:)];
+//        //objectAtIndexedSubscript:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayM replacedSel:@selector(objectAtIndexedSubscript:) replaceSel:@selector(_NSArrayM_objectAtIndexedSubscript:)];
+//        //setObject:atIndexedSubscript:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayM replacedSel:@selector(setObject:atIndexedSubscript:) replaceSel:@selector(_NSArrayM_setObject:atIndexedSubscript:)];
+//        //removeObjectAtIndex:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayM replacedSel:@selector(removeObjectAtIndex:) replaceSel:@selector(_NSArrayM_removeObjectAtIndex:)];
+//        //insertObject:atIndex:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayM replacedSel:@selector(insertObject:atIndex:) replaceSel:@selector(_NSArrayM_insertObject:atIndex:)];
+//        //getObjects:range:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayM replacedSel:@selector(getObjects:range:) replaceSel:@selector(_NSArrayM_getObjects:range:)];
+//        
+//    });
+//}
 #pragma mark - objectAtIndex:
 - (id)_NSArrayM_objectAtIndex:(NSUInteger)index {
     id object = nil;

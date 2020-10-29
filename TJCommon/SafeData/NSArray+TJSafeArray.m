@@ -10,8 +10,7 @@
 
 @implementation NSArray (TJSafeArray)
 
-+ (void)load {
-    [super load];
++ (void)avoidCrashExchangeMethod {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
@@ -42,6 +41,40 @@
         
     });
 }
+
+
+//+ (void)load {
+//    [super load];
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        
+//        Class _NSArray = NSClassFromString(@"NSArray");
+//        Class _NSArrayI = NSClassFromString(@"__NSArrayI");
+//        Class _NSSingleObjectArrayI = NSClassFromString(@"__NSSingleObjectArrayI");
+//        Class _NSArray0 = NSClassFromString(@"__NSArray0");
+//        
+//        //替换类方法
+//        //arrayWithObjects:count:  简写创建方法调用
+//        [NSObject TJ_exchangeClassMethodWithReplacedClass:_NSArray replacedSel:@selector(arrayWithObjects:count:) replaceSel:@selector(_NSArray_arrayWithObjects:count:)];
+//        
+//        //替换对象方法
+//        // objectsAtIndexes:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArray replacedSel:@selector(objectsAtIndexes:) replaceSel:@selector(_NSArray_objectsAtIndexes:)];
+//        //objectAtIndex:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayI replacedSel:@selector(objectAtIndex:) replaceSel:@selector(_NSArrayI_objectAtIndex:)];
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSSingleObjectArrayI replacedSel:@selector(objectAtIndex:) replaceSel:@selector(_NSSingleObjectArrayI_objectAtIndex:)];
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArray0 replacedSel:@selector(objectAtIndex:) replaceSel:@selector(_NSArray0_objectAtIndex:)];
+//        
+//        //objectAtIndexedSubscript:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayI replacedSel:@selector(objectAtIndexedSubscript:) replaceSel:@selector(_NSArrayI_objectAtIndexedSubscript:)];
+//        
+//        //getObjects:range:
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArray replacedSel:@selector(getObjects:range:) replaceSel:@selector(_NSArray_getObjects:range:)];
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSArrayI replacedSel:@selector(getObjects:range:) replaceSel:@selector(_NSArrayI_getObjects:range:)];
+//        [NSObject TJ_exchangeMethodWithReplacedClass:_NSSingleObjectArrayI replacedSel:@selector(getObjects:range:) replaceSel:@selector(_NSSingleObjectArrayI_getObjects:range:)];
+//        
+//    });
+//}
 #pragma mark - arrayWithObjects:count:
 + (instancetype)_NSArray_arrayWithObjects:(const id  _Nonnull __unsafe_unretained *)objects count:(NSUInteger)cnt {
     id instance = nil;
