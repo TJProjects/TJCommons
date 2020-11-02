@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     #名称
   s.name             = 'TJCommons'
   #版本号
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   #简介
   s.summary          = 'define factory SafeData dataCheck buttonClickInterval image'
   #描述

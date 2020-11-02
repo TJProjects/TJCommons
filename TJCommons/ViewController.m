@@ -70,6 +70,8 @@
     
     NSLog(@"%@",kSafeTimeStamp(@"8998918839898131321.88991"));
     NSLog(@"%@",[NSDate TJ_getYearByDate:[NSDate date]]);
+    NSLog(@"%@",[NSDate TJ_DefaultString2FromDate:[NSDate date]]);
+
 }
 
 

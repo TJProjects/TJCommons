@@ -23,7 +23,7 @@ NSArray *kSafeArrayValue(id value);
 id kSafeValue(id value);
 
 #pragma mark 校验时间戳，返回正常时间戳 单位秒
-NSString *kSafeTimeStamp(NSString * timeStamp);
+NSString *kSafeTimeStamp(id value);
 
 
 @end

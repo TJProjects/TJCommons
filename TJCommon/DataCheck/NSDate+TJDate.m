@@ -56,19 +56,43 @@ static NSDateFormatter *dateFormatter;
 + (NSString *)TJ_getTimeStampNow {
     return [NSDate TJ_timeStampFromData:[NSDate date]];
 }
-
+#pragma mark 获取标准时间字符串 年月日时分秒
++ (NSString *)TJ_DefaultStringFromDate:(NSDate *)date {
+    return [NSDate TJ_StringFromDate:date format:@"yyyy-MM-dd HH:mm:ss"];
+}
++ (NSString *)TJ_DefaultStringFromTimeStamp:(NSString *)timeStamp {
+    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"yyyy-MM-dd HH:mm:ss"];
+}
++ (NSString *)TJ_DefaultString2FromDate:(NSDate *)date {
+    return [NSDate TJ_StringFromDate:date format:@"yyyy年MM月dd日 HH点mm分ss秒"];
+}
++ (NSString *)TJ_DefaultString2FromTimeStamp:(NSString *)timeStamp {
+    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"yyyy年MM月dd日 HH点mm分ss秒"];
+}
++ (NSString *)TJ_getYearMothDayHourMinuteFromDate:(NSDate *)date {
+    return [NSDate TJ_StringFromDate:date format:@"yyyy-MM-dd HH:mm"];
+}
++ (NSString *)TJ_getYearMothDayHourMinuteFromTimeStamp:(NSString *)timeStamp {
+    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"yyyy-MM-dd HH:mm"];
+}
 #pragma mark 获取年月日
 + (NSString *)TJ_getYearMothDay:(NSString *)timeStamp {
     return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"yyyy-MM-dd"];
 }
-+ (NSString *)TJ_getYearMothDay2:(NSString *)timeStamp {
-    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"yyyy年MM月dd日"];
-}
 + (NSString *)TJ_getYearMothDayByDate:(NSDate *)date {
     return [NSDate TJ_StringFromDate:date format:@"yyyy-MM-dd"];
 }
++ (NSString *)TJ_getYearMothDay2:(NSString *)timeStamp {
+    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"yyyy年MM月dd日"];
+}
 + (NSString *)TJ_getYearMothDay2ByDate:(NSDate *)date {
     return [NSDate TJ_StringFromDate:date format:@"yyyy年MM月dd日"];
+}
++ (NSString *)TJ_getMothDay:(NSString *)timeStamp {
+    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"MM-dd"];
+}
++ (NSString *)TJ_getMothDayByDate:(NSDate *)date {
+    return [NSDate TJ_StringFromDate:date format:@"MM-dd"];
 }
 #pragma mark 获取时分秒
 + (NSString *)TJ_getHourMinuteSecond:(NSString *)timeStamp {
@@ -76,6 +100,18 @@ static NSDateFormatter *dateFormatter;
 }
 + (NSString *)TJ_getHourMinuteSecondByDate:(NSDate *)date {
     return [NSDate TJ_StringFromDate:date format:@"HH:mm:ss"];
+}
++ (NSString *)TJ_getHourMinute2Second:(NSString *)timeStamp {
+    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"HH点mm分ss秒"];
+}
++ (NSString *)TJ_getHourMinute2SecondByDate:(NSDate *)date {
+    return [NSDate TJ_StringFromDate:date format:@"HH点mm分ss秒"];
+}
++ (NSString *)TJ_getHourMinute:(NSString *)timeStamp {
+    return [NSDate TJ_StringFromTimeStamp:kSafeTimeStamp(timeStamp) format:@"HH:mm"];
+}
++ (NSString *)TJ_getHourMinuteByDate:(NSDate *)date {
+    return [NSDate TJ_StringFromDate:date format:@"HH:mm"];
 }
 #pragma mark 获取单独的 年月日时分秒
 + (NSString *)TJ_getYear:(NSString *)timeStamp {

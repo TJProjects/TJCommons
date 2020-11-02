@@ -32,15 +32,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 获取当前时间戳
 + (NSString *)TJ_getTimeStampNow;
-
+#pragma mark 获取标准时间字符串 年月日时分秒
++ (NSString *)TJ_DefaultStringFromDate:(NSDate *)date;
++ (NSString *)TJ_DefaultStringFromTimeStamp:(NSString *)timeStamp;
++ (NSString *)TJ_DefaultString2FromDate:(NSDate *)date;
++ (NSString *)TJ_DefaultString2FromTimeStamp:(NSString *)timeStamp;
++ (NSString *)TJ_getYearMothDayHourMinuteFromDate:(NSDate *)date;
++ (NSString *)TJ_getYearMothDayHourMinuteFromTimeStamp:(NSString *)timeStamp;
 #pragma mark 获取年月日
 + (NSString *)TJ_getYearMothDay:(NSString *)timeStamp;
-+ (NSString *)TJ_getYearMothDay2:(NSString *)timeStamp;
 + (NSString *)TJ_getYearMothDayByDate:(NSDate *)date;
++ (NSString *)TJ_getYearMothDay2:(NSString *)timeStamp;
 + (NSString *)TJ_getYearMothDay2ByDate:(NSDate *)date;
++ (NSString *)TJ_getMothDay:(NSString *)timeStamp;
++ (NSString *)TJ_getMothDayByDate:(NSDate *)date;
 #pragma mark 获取时分秒
 + (NSString *)TJ_getHourMinuteSecond:(NSString *)timeStamp;
 + (NSString *)TJ_getHourMinuteSecondByDate:(NSDate *)date;
++ (NSString *)TJ_getHourMinute2Second:(NSString *)timeStamp;
++ (NSString *)TJ_getHourMinute2SecondByDate:(NSDate *)date;
++ (NSString *)TJ_getHourMinute:(NSString *)timeStamp;
++ (NSString *)TJ_getHourMinuteByDate:(NSDate *)date;
 #pragma mark 获取单独的 年月日时分秒
 + (NSString *)TJ_getYear:(NSString *)timeStamp;
 + (NSString *)TJ_getMoth:(NSString *)timeStamp;

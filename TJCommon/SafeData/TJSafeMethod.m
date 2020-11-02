@@ -65,7 +65,8 @@ id kSafeValue(id value) {
     return [NSString stringWithFormat:@"%@",value];
 }
 #pragma mark 校验时间戳，返回正常时间戳 单位秒
-NSString *kSafeTimeStamp(NSString * timeStamp) {
+NSString *kSafeTimeStamp(id value) {
+    NSString *timeStamp = kSafeStringValue(value);
     NSString *time = [[timeStamp componentsSeparatedByString:@"."] firstObject];
     if (time.length == 10) {
         return timeStamp;
@@ -84,7 +85,7 @@ NSString *kSafeTimeStamp(NSString * timeStamp) {
         }
         return [NSString stringWithFormat:@"%lf",value];
     }
-    return @"";
+    return timeStamp;
 }
 
 @end
