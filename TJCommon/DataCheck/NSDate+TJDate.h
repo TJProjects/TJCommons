@@ -35,8 +35,11 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark 获取年月日
 + (NSString *)TJ_getYearMothDay:(NSString *)timeStamp;
 + (NSString *)TJ_getYearMothDay2:(NSString *)timeStamp;
++ (NSString *)TJ_getYearMothDayByDate:(NSDate *)date;
++ (NSString *)TJ_getYearMothDay2ByDate:(NSDate *)date;
 #pragma mark 获取时分秒
 + (NSString *)TJ_getHourMinuteSecond:(NSString *)timeStamp;
++ (NSString *)TJ_getHourMinuteSecondByDate:(NSDate *)date;
 #pragma mark 获取单独的 年月日时分秒
 + (NSString *)TJ_getYear:(NSString *)timeStamp;
 + (NSString *)TJ_getMoth:(NSString *)timeStamp;
@@ -45,8 +48,19 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)TJ_getMinute:(NSString *)timeStamp;
 + (NSString *)TJ_getSecond:(NSString *)timeStamp;
 
++ (NSString *)TJ_getYearByDate:(NSDate *)date;
++ (NSString *)TJ_getMothByDate:(NSDate *)date;
++ (NSString *)TJ_getDayByDate:(NSDate *)date;
++ (NSString *)TJ_getHourByDate:(NSDate *)date;
++ (NSString *)TJ_getMinuteByDate:(NSDate *)date;
++ (NSString *)TJ_getSecondByDate:(NSDate *)date;
+
+#pragma mark 判断是否是同一天
++ (BOOL)TJ_CheckDayByDate:(NSDate *)date1 data:(NSDate *)date2;
++ (BOOL)TJ_CheckDayByTimeStamp:(NSString *)timeStamp1 timeStamp:(NSString *)timeStamp2;
 #pragma mark 获取两个时间相差几天
-+ (NSInteger)tj_getDayWithStart:(NSString *)timeStamp1 end:(NSString *)timeStamp2;
++ (NSInteger)TJ_getLessDayWithTimeStampStart:(NSString *)timeStamp1 end:(NSString *)timeStamp2;
++ (NSInteger)TJ_getLessDayWithDateStart:(NSDate *)date1 end:(NSDate *)date2;
 
 
 
