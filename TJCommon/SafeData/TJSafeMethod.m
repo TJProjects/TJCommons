@@ -64,5 +64,27 @@ id kSafeValue(id value) {
     }
     return [NSString stringWithFormat:@"%@",value];
 }
+#pragma mark 校验时间戳，返回正常时间戳 单位秒
+NSString *kSafeTimeStamp(NSString * timeStamp) {
+    NSString *time = [[timeStamp componentsSeparatedByString:@"."] firstObject];
+    if (time.length == 10) {
+        return timeStamp;
+    } else if (time.length > 10) {
+        NSInteger num = time.length - 10;
+        double value = [timeStamp doubleValue];
+        for (NSInteger i = 0; i < num; i++) {
+            value = value*0.1;
+        }
+        return [NSString stringWithFormat:@"%lf",value];
+    } else if (time.length < 10) {
+        NSInteger num = 10 - time.length;
+        double value = [timeStamp doubleValue];
+        for (NSInteger i = 0; i < num; i++) {
+            value = value*10;
+        }
+        return [NSString stringWithFormat:@"%lf",value];
+    }
+    return @"";
+}
 
 @end

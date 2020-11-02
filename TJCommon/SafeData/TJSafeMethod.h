@@ -22,6 +22,9 @@ NSArray *kSafeArrayValue(id value);
 #pragma mark 过滤value中的空值、判断类型 其他类型转为String
 id kSafeValue(id value);
 
+#pragma mark 校验时间戳，返回正常时间戳 单位秒
+NSString *kSafeTimeStamp(NSString * timeStamp);
+
 
 @end
 

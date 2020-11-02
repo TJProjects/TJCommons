@@ -67,8 +67,9 @@
     NSLog(@"%@",[NSDate TJ_getSecond:time]);
     NSLog(@"%@",[NSDate TJ_getMinute:time]);
 
-
-
+    
+    NSLog(@"%@",kSafeTimeStamp(@"8998918839898131321.88991"));
+    NSLog(@"%@",[NSDate TJ_getYearByDate:[NSDate date]]);
 }
 
 
