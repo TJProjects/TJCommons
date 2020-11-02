@@ -77,6 +77,7 @@
     NSLog(@"%@",[NSDictionary TJ_ModifyValueForKey:@"s" value:@"测送" data:dictTest]);
     NSLog(@"%@",[NSDictionary TJ_ModifyValueForKey:@"test" value:@"1" mValue:@"testChange 1" data:dictTest]);
     NSLog(@"%@",[NSDictionary TJ_ModifyValueForKey:@"test" value:@"2" mKey:@"testChange" mValue:@"testChange 2" data:dictTest]);
+    NSLog(@"%@",[NSDictionary TJ_ModifyValueForIndex:1 value:@"sa" mValue:@"changeValue" data:dictTest]);
 
 }
 

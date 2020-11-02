@@ -99,5 +99,29 @@
     }
     return data;
 }
+#pragma mark - 通过数组的下标 和值  修改成另外的值
++ (id )TJ_ModifyValueForIndex:(NSInteger)index value:(id)value mValue:(id)mValue data:(id)data {
+    if ([data isKindOfClass:[NSDictionary class]]) {
+        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:data];
+        for (id keys in [data allKeys]) {
+            [dict setValue:[self TJ_ModifyValueForIndex:index value:value mValue:mValue data:[data objectForKey:keys]] forKey:keys];
+        }
+        return  dict;
+    } else if ([data isKindOfClass:[NSArray class]]) {
+        NSMutableArray *array = [NSMutableArray arrayWithArray:data];
+        NSInteger num = array.count;
+        for (NSInteger i = 0; i < num; i++) {
+            id values = [data objectAtIndex:i];
+            [array removeObjectAtIndex:i];
+            if (i == index && [values isEqual:value]) {
+                [array insertObject:mValue atIndex:i];
+            } else {
+                [array insertObject:[self TJ_ModifyValueForIndex:index value:value mValue:mValue data:values] atIndex:i];
+            }
+        }
+        return array;
+    }
+    return data;
+}
 
 @end

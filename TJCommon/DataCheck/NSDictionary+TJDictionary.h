@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (id )TJ_ModifyValueForKey:(NSString *)key value:(id)value mValue:(id)mValue data:(id)data;
 #pragma mark - 通过key value 修改成另外的 key value
 + (id )TJ_ModifyValueForKey:(NSString *)key value:(id)value mKey:(NSString *)mKey mValue:(id)mValue data:(id)data;
+#pragma mark - 通过数组的下标 和值  修改成另外的值
++ (id )TJ_ModifyValueForIndex:(NSInteger)index value:(id)value mValue:(id)mValue data:(id)data;
+
 
 @end
 
