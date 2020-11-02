@@ -71,6 +71,12 @@
     NSLog(@"%@",kSafeTimeStamp(@"8998918839898131321.88991"));
     NSLog(@"%@",[NSDate TJ_getYearByDate:[NSDate date]]);
     NSLog(@"%@",[NSDate TJ_DefaultString2FromDate:[NSDate date]]);
+    NSDictionary *dictTest = @{@"name":@{@"result":@[@{@"list":@"4"},@[@"3",@"sa",@"45"],@{@"s":@"adsda"},@{@"121":@"ooo"},@[@"asda",@"sada"]],@"test":@"2"},@"test":@"1"};
+    NSLog(@"%@",dictTest);
+    NSLog(@"%@",[NSDictionary TJ_getAllValueForKey:@"test" data:dictTest]);
+    NSLog(@"%@",[NSDictionary TJ_ModifyValueForKey:@"s" value:@"测送" data:dictTest]);
+    NSLog(@"%@",[NSDictionary TJ_ModifyValueForKey:@"test" value:@"1" mValue:@"testChange 1" data:dictTest]);
+    NSLog(@"%@",[NSDictionary TJ_ModifyValueForKey:@"test" value:@"2" mKey:@"testChange" mValue:@"testChange 2" data:dictTest]);
 
 }
 

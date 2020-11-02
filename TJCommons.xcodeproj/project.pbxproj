@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043DC257254FE33F006D2A4F /* NSDictionary+TJDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DC256254FE33F006D2A4F /* NSDictionary+TJDictionary.m */; };
 		04A6EA102547C7140054E1DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA0F2547C7140054E1DB /* AppDelegate.m */; };
 		04A6EA162547C7140054E1DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA152547C7140054E1DB /* ViewController.m */; };
 		04A6EA192547C7140054E1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA172547C7140054E1DB /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043DC255254FE33F006D2A4F /* NSDictionary+TJDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TJDictionary.h"; sourceTree = "<group>"; };
+		043DC256254FE33F006D2A4F /* NSDictionary+TJDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TJDictionary.m"; sourceTree = "<group>"; };
 		04A6EA0B2547C7140054E1DB /* TJCommons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJCommons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A6EA0E2547C7140054E1DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04A6EA0F2547C7140054E1DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				04A6EAE2254982F80054E1DB /* NSString+TJString.m */,
 				04A6EAE6254984EE0054E1DB /* NSDate+TJDate.h */,
 				04A6EAE7254984EE0054E1DB /* NSDate+TJDate.m */,
+				043DC255254FE33F006D2A4F /* NSDictionary+TJDictionary.h */,
+				043DC256254FE33F006D2A4F /* NSDictionary+TJDictionary.m */,
 			);
 			path = DataCheck;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				04A6EA162547C7140054E1DB /* ViewController.m in Sources */,
 				04A6EA652547FB0F0054E1DB /* UIButton+TJButton.m in Sources */,
 				04A6EA842548204F0054E1DB /* TJSafeMethod.m in Sources */,
+				043DC257254FE33F006D2A4F /* NSDictionary+TJDictionary.m in Sources */,
 				04A6EABE2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.m in Sources */,
 				04A6EA102547C7140054E1DB /* AppDelegate.m in Sources */,
 				04A6EA212547C7150054E1DB /* main.m in Sources */,

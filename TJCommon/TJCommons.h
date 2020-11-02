@@ -21,15 +21,11 @@
 
 //数据安全处理
 #import "TJSafeMethod.h"
-//#import "NSArray+TJSafeArray.h"
-//#import "NSMutableArray+TJSafeMutableArray.h"
-//#import "NSDictionary+TJSafeDictionary.h"
-//#import "NSMutableDictionary+TJSafeMutableDictionary.h"
-//#import "NSObject+TJSafeMethod.h"
 
-// 常用的文字计算。时间计算
+// 常用的文字计算。时间计算 字典解析
 #import "NSString+TJString.h"
 #import "NSDate+TJDate.h"
+#import "NSDictionary+TJDictionary.h"
 
 // button 重复点击
 #import "UIButton+TJClickInterval.h"
