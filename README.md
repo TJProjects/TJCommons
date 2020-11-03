@@ -16,7 +16,7 @@ pod 'TJCommons', :tag => 'version', :git=> 'https://github.com/TJProjects/TJComm
     return 0;  
 };  
 
-//获取崩溃拦截消息。 
+//获取崩溃拦截消息  
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(crashNotification:) name:kTJCrashNotification object:nil];  
 - (void)crashNotification:(NSNotification *)notif {  
     NSLog(@"%@",notif.userInfo);  
