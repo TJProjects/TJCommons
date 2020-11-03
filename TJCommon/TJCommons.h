@@ -33,6 +33,9 @@
 // image 处理
 #import "UIImage+TJImage.h"
 
+//键盘处理
+#import "TJKeyboardManager.h"
+
 //常用文件处理
 #import "TJFile.h"
 //常用设备信息

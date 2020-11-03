@@ -13,7 +13,7 @@
 @property (nonatomic, assign)float keyboardChangeHeight;
 @property (nonatomic, strong)UIView * _Nullable keyboardSubView;
 @property (nonatomic, assign)float moreHeight;
-@property (nonatomic, strong)NSDictionary *changeInfo;
+@property (nonatomic, strong)NSDictionary *info;
 
 @end
 
@@ -33,7 +33,7 @@
     if (self) {
         self.keyboardChangeHeight = 0;
         self.moreHeight = 0;
-        self.changeInfo = [NSDictionary dictionary];
+        self.info = [NSDictionary dictionary];
     }
     return self;
 }
@@ -46,7 +46,7 @@
 }
 // 设置。不同的tag对应的除了输入框外需要上移的高度 @{@"100":80}
 - (void)setChangeInfo:(NSDictionary *)info {
-    self.changeInfo = info;
+    self.info = info;
 }
 /**
  *  键盘将要显示
@@ -76,8 +76,8 @@
         self.moreHeight = self.Block(self.keyboardSubView.tag);
     }
     if (self.moreHeight == 0) {
-        if ([[self.changeInfo allKeys] containsObject:[NSString stringWithFormat:@"%ld",self.keyboardSubView.tag]]) {
-            self.moreHeight = [[self.changeInfo objectForKey:[NSString stringWithFormat:@"%ld",self.keyboardSubView.tag]] floatValue];
+        if ([[self.info allKeys] containsObject:[NSString stringWithFormat:@"%ld",self.keyboardSubView.tag]]) {
+            self.moreHeight = [[self.info objectForKey:[NSString stringWithFormat:@"%ld",self.keyboardSubView.tag]] floatValue];
         }
     }
 }
