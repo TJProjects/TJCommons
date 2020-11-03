@@ -8,6 +8,7 @@
 #import "NSObject+TJSafeMethod.h"
 #import "NSObject+TJExchangeMethod.h"
 #import <objc/runtime.h>
+#import "TJCommons_define.h"
 
 @implementation NSObject (TJSafeMethod)
 
@@ -55,6 +56,12 @@
             NSString *errClassName = NSStringFromClass([self class]);
             NSString *errSel   = NSStringFromSelector(aSelector);
             NSLog(@"TJCommons_方法未实现崩溃 == className:%@ methodName:%@", errClassName, errSel);
+            [[NSNotificationCenter defaultCenter] postNotificationName:kTJCrashNotification object:nil userInfo:@{
+                @"errorName":@"方法未实现",
+                @"errorReason":@"",
+                @"className":errClassName,
+                @"classMethod":errSel,
+            }];
             
             NSString *className = @"CrachClass";
             Class cls = NSClassFromString(className);

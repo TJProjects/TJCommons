@@ -23,6 +23,9 @@
 #define kWeakSelf(type) @kAAWeakSelf(type);
 #define kStrongSelf(type) @kAAStrongSelf(type);
 
+// 崩溃发生 拦截的消息通知
+#define kTJCrashNotification @"k_TJ_Carsh_Notification"
+
 #pragma mark -  常用宽高
 #define kWidth ([UIScreen mainScreen].bounds.size.width)
 #define kHeight ([UIScreen mainScreen].bounds.size.height)

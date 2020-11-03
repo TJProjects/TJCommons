@@ -25,6 +25,10 @@
     [self.view addSubview:button];
     [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(crashNotification:) name:kTJCrashNotification object:nil];
+}
+- (void)crashNotification:(NSNotification *)notif {
+    NSLog(@"%@",notif.userInfo);
 }
 
 - (void)buttonClick {

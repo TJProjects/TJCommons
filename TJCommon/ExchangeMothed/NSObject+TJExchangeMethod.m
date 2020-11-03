@@ -7,6 +7,7 @@
 
 #import "NSObject+TJExchangeMethod.h"
 #import <objc/runtime.h>
+#import "TJCommons_define.h"
 
 @implementation NSObject (TJExchangeMethod)
 
@@ -118,6 +119,12 @@
     }
     NSString *logErrorMessage = [NSString stringWithFormat:@"TJCommons_崩溃===== className:%@ name:%@ reason:%@",mainCallStackSymbolMsg,exception.name, exception.reason];
     NSLog(@"%@",logErrorMessage);
+    [[NSNotificationCenter defaultCenter] postNotificationName:kTJCrashNotification object:nil userInfo:@{
+        @"errorName":exception.name,
+        @"errorReason":exception.reason,
+        @"className":mainCallStackSymbolMsg,
+        @"classMethod":@"",
+    }];
 }
 
 
