@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		043DC257254FE33F006D2A4F /* NSDictionary+TJDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DC256254FE33F006D2A4F /* NSDictionary+TJDictionary.m */; };
+		043DC2742550F33A006D2A4F /* TJKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DC2732550F33A006D2A4F /* TJKeyboardManager.m */; };
+		043DC2792550F4B6006D2A4F /* TJFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DC2782550F4B6006D2A4F /* TJFile.m */; };
+		043DC27E2550F5A6006D2A4F /* TJDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DC27D2550F5A6006D2A4F /* TJDevice.m */; };
 		04A6EA102547C7140054E1DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA0F2547C7140054E1DB /* AppDelegate.m */; };
 		04A6EA162547C7140054E1DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6EA152547C7140054E1DB /* ViewController.m */; };
 		04A6EA192547C7140054E1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A6EA172547C7140054E1DB /* Main.storyboard */; };
@@ -38,6 +41,12 @@
 /* Begin PBXFileReference section */
 		043DC255254FE33F006D2A4F /* NSDictionary+TJDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TJDictionary.h"; sourceTree = "<group>"; };
 		043DC256254FE33F006D2A4F /* NSDictionary+TJDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TJDictionary.m"; sourceTree = "<group>"; };
+		043DC2722550F33A006D2A4F /* TJKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJKeyboardManager.h; sourceTree = "<group>"; };
+		043DC2732550F33A006D2A4F /* TJKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJKeyboardManager.m; sourceTree = "<group>"; };
+		043DC2772550F4B6006D2A4F /* TJFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJFile.h; sourceTree = "<group>"; };
+		043DC2782550F4B6006D2A4F /* TJFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJFile.m; sourceTree = "<group>"; };
+		043DC27C2550F5A6006D2A4F /* TJDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TJDevice.h; sourceTree = "<group>"; };
+		043DC27D2550F5A6006D2A4F /* TJDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TJDevice.m; sourceTree = "<group>"; };
 		04A6EA0B2547C7140054E1DB /* TJCommons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJCommons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A6EA0E2547C7140054E1DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04A6EA0F2547C7140054E1DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +109,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043DC2712550F33A006D2A4F /* KeybordManager */ = {
+			isa = PBXGroup;
+			children = (
+				043DC2722550F33A006D2A4F /* TJKeyboardManager.h */,
+				043DC2732550F33A006D2A4F /* TJKeyboardManager.m */,
+			);
+			path = KeybordManager;
+			sourceTree = "<group>";
+		};
+		043DC2762550F3F9006D2A4F /* TJFile */ = {
+			isa = PBXGroup;
+			children = (
+				043DC2772550F4B6006D2A4F /* TJFile.h */,
+				043DC2782550F4B6006D2A4F /* TJFile.m */,
+			);
+			path = TJFile;
+			sourceTree = "<group>";
+		};
+		043DC27B2550F589006D2A4F /* TJDevice */ = {
+			isa = PBXGroup;
+			children = (
+				043DC27C2550F5A6006D2A4F /* TJDevice.h */,
+				043DC27D2550F5A6006D2A4F /* TJDevice.m */,
+			);
+			path = TJDevice;
+			sourceTree = "<group>";
+		};
 		04A6EA022547C7140054E1DB = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +184,9 @@
 				04A6EB2F254AAA9E0054E1DB /* DataCheck */,
 				04A6EB2E254AAA7B0054E1DB /* ButtonClickInterval */,
 				04A6EB2D254AAA610054E1DB /* Image */,
+				043DC2712550F33A006D2A4F /* KeybordManager */,
+				043DC2762550F3F9006D2A4F /* TJFile */,
+				043DC27B2550F589006D2A4F /* TJDevice */,
 			);
 			path = TJCommon;
 			sourceTree = "<group>";
@@ -326,6 +365,7 @@
 			files = (
 				04A6EAD125497B0D0054E1DB /* NSObject+TJSafeMethod.m in Sources */,
 				04A6EAED254A62590054E1DB /* UIButton+TJClickInterval.m in Sources */,
+				043DC2792550F4B6006D2A4F /* TJFile.m in Sources */,
 				04A6EAF4254A75760054E1DB /* UIImage+TJImage.m in Sources */,
 				04A6EA6A254803510054E1DB /* UILabel+TJLabel.m in Sources */,
 				04A6EAC225495D420054E1DB /* NSMutableDictionary+TJSafeMutableDictionary.m in Sources */,
@@ -336,11 +376,13 @@
 				04A6EAE3254982F80054E1DB /* NSString+TJString.m in Sources */,
 				04A6EA732548122C0054E1DB /* UITableView+TJTableView.m in Sources */,
 				04A6EA782548140E0054E1DB /* UIViewController+TJViewController.m in Sources */,
+				043DC2742550F33A006D2A4F /* TJKeyboardManager.m in Sources */,
 				04A6EB2A254AA9BC0054E1DB /* TJCommon.m in Sources */,
 				04A6EA162547C7140054E1DB /* ViewController.m in Sources */,
 				04A6EA652547FB0F0054E1DB /* UIButton+TJButton.m in Sources */,
 				04A6EA842548204F0054E1DB /* TJSafeMethod.m in Sources */,
 				043DC257254FE33F006D2A4F /* NSDictionary+TJDictionary.m in Sources */,
+				043DC27E2550F5A6006D2A4F /* TJDevice.m in Sources */,
 				04A6EABE2549578E0054E1DB /* NSMutableArray+TJSafeMutableArray.m in Sources */,
 				04A6EA102547C7140054E1DB /* AppDelegate.m in Sources */,
 				04A6EA212547C7150054E1DB /* main.m in Sources */,

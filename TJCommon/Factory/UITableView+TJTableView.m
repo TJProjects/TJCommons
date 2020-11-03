@@ -11,7 +11,7 @@
 
 @implementation UITableView (TJTableView)
 
-- (void)setDefault {
+- (void)TJ_setDefault {
     //隐藏滚动条
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
