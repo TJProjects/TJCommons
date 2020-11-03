@@ -1,6 +1,6 @@
 # TJCommons
 
-使用方法
+使用方法  
 pod 'TJCommons', :tag => 'version', :git=> 'https://github.com/TJProjects/TJCommons.git'
 
 //崩溃数据检测 开启
