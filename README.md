@@ -34,11 +34,11 @@ pod 'TJCommons', :tag => 'version', :git=> 'https://github.com/TJProjects/TJComm
 // button 重复点击 
 #import "UIButton+TJClickInterval.h" 
 
-// image 处理
-#import "UIImage+TJImage.h"
+// image 处理 
+#import "UIImage+TJImage.h" 
 
-//常用文件处理
-#import "TJFile.h"
+//常用文件处理 
+#import "TJFile.h" 
 
-//常用设备信息
-#import "TJDevice.h"
+//常用设备信息 
+#import "TJDevice.h" 
