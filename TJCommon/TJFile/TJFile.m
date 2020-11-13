@@ -148,5 +148,16 @@
         return NO;
     }
 }
+//复制文件到指定路径
++ (BOOL)copyFile:(NSString *)path newPath:(NSString *)newPath {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    if ([fileManager copyItemAtPath:path toPath:newPath error:&error]) {
+        return YES;
+    } else {
+        NSLog(@"%@",error.localizedDescription);
+        return NO;
+    }
+}
 
 @end

@@ -44,6 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString * _Nullable)getFileType:(NSString *)filePath;
 //文件重命名
 + (BOOL)renameFile:(NSString *)path name:(NSString *)name;
+//复制文件到指定路径
++ (BOOL)copyFile:(NSString *)path newPath:(NSString *)newPath;
 
 @end
 
